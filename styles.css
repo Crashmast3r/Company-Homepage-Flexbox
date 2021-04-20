@@ -5,6 +5,11 @@
     src: url('Fonts/Berlin\ Sans\ FB\ Demi\ Bold/Berlin Sans FB Demi Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Sacramento';
+    src: url('Fonts/Sacramento-Regular/Sacramento-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -88,15 +93,105 @@ li {
 
 .photo {
     padding: 20px;
-    margin: 20px;
-    background-color: gray;
+    margin: 10px;
+    color: gray;
+    background-color: black;
     flex-direction: column;
 }
 
 #pics {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    background-color: black;
+    background: rgba(128, 128, 128, 0.8);
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+/*Reviews*/
+
+#reviews {
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-evenly;
+}
+
+.review-item {
+    background: rgba(255, 255, 255, 0.3);
+    border: red solid 2px;
+    border-radius: 10%;
+    width: 300px;
+    font-size: 2em;
+    padding: 5px;
+    font-family: Sacramento, serif;
+    line-height: 0.9em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.review1 {
+    align-self: center;
+}
+
+.review2 {
+    align-self: flex-end;
+}
+span {
+    text-align: right;
+    font-weight: 1000;
+}
+
+/*Employees*/
+
+.employee {
+    flex-flow: column wrap;
+    margin: 20px auto;
+    background: rgba(128, 128, 128, 0.8);
+    padding-bottom: 5px;
+}
+
+.kate {
+    width: 400px;
+    height: 300px;
+}
+
+.employee-pic {
+    width: 200px;
+    height: 300px;
+}
+
+#employees {
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+/*Locations*/
+
+#locations {
+    flex-direction: column;
+    background-color: black;
+    color: gray;
+}
+
+.location-container {
+    width: 80%;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.location {
+    width: 400px;
+    height: 350px;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+
+.location p {
+    padding: 20px;
+}
+
+.loc-pic {
+    width: 300px;
+    height: 200px;
 }
