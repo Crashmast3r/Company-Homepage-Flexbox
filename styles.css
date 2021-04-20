@@ -105,6 +105,7 @@ li {
     background: rgba(128, 128, 128, 0.8);
     flex-flow: row wrap;
     justify-content: space-around;
+    padding: 20px;
 }
 
 /*Reviews*/
@@ -112,27 +113,32 @@ li {
 #reviews {
     width: 80%;
     margin: 20px auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .review-item {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 0, 0.3);
     border: red solid 2px;
     border-radius: 10%;
     width: 300px;
-    font-size: 2em;
-    padding: 5px;
+    font-size: 1.7em;
+    padding: 10px;
     font-family: Sacramento, serif;
     line-height: 0.9em;
     font-weight: 800;
     text-align: center;
+    margin: 2px;
 }
 
-.review1 {
+#review1 {
     align-self: center;
 }
 
-.review2 {
+#review2 {
+    align-self: flex-start;
+}
+
+#review3 {
     align-self: flex-end;
 }
 span {
@@ -169,22 +175,41 @@ span {
 /*Locations*/
 
 #locations {
-    flex-direction: column;
+    width: 80%;
+    flex-flow: column wrap;
     background-color: black;
     color: gray;
+    justify-content: flex-end;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.loc-head {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: center;
+    align-self: center;
+    border: white solid 1px;
+    border-radius: 40%;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .location-container {
     width: 80%;
-    flex-flow: row wrap;
-    margin: auto;
+    flex-flow: row wrap-reverse;
+    align-self: center;
+    justify-content: space-around;
 }
 
 .location {
-    width: 400px;
+    width: 350px;
     height: 350px;
     flex-flow: column wrap;
-    padding: 10px;
 }
 
 .location p {
@@ -194,4 +219,17 @@ span {
 .loc-pic {
     width: 300px;
     height: 200px;
+}
+
+/*Footer*/
+
+#footer {
+    width: 100%;
+    background: rgba(128, 128, 128, 0.8);
+    margin-top: 5px;
+}
+
+#footer p {
+    padding: 5px;
+    text-align: end;
 }
