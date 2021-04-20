@@ -25,6 +25,10 @@ body {
     display: flex;
 }
 
+h1, h2, h3 {
+    font-family: BerlinSansDemiBold;
+}
+
 
 /*Logo*/
 
@@ -110,6 +114,17 @@ li {
 
 /*Reviews*/
 
+@media only screen and (max-width: 800px) {
+    #reviews {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .review-item {
+        margin: 10px;
+    }
+}
+
 #reviews {
     width: 80%;
     margin: 20px auto;
@@ -141,9 +156,11 @@ li {
 #review3 {
     align-self: flex-end;
 }
-span {
-    text-align: right;
-    font-weight: 1000;
+
+.reviewer {
+    text-align: end;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 /*Employees*/
@@ -170,6 +187,10 @@ span {
     margin: auto;
     align-content: center;
     flex-flow: row wrap;
+}
+
+#employees h3, h4 {
+    margin-left: 5px;
 }
 
 /*Locations*/
